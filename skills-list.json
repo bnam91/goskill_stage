@@ -40,7 +40,7 @@
     },
     "hometax_manager": {
       "description": "홈택스용 세금계산서/거래처 시트를 관리하는 스킬. 본인 회사 상호와 시트 정보를 스크립트에 입력 후 사용.",
-      "tag": ""
+      "tag": "onboarding"
     },
     "ads-manager": {
       "description": "쿠팡 광고 관리 스킬. NotebookLM 강의 조회, chrome-cdp 9341 포트로 광고센터 자동화, 핵심 광고 원칙 가이드 포함.",
