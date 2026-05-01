@@ -53,6 +53,10 @@
     "nlm": {
       "description": "NotebookLM 노트북을 alias로 빠르게 열거나 질문하는 단축어 스킬. nlm CLI(notebooklm-mcp-cli) 설치 + Google OAuth + 본인 alias 등록 필요.",
       "tag": ""
+    },
+    "telegram-send": {
+      "description": "goagent_bot으로 본인에게 텔레그램 메시지를 보내는 스킬 (본인 멀티맥 동기화용). ~/Documents/github_cloud/module_telegram/ 모듈을 다른 맥에서 복사해 와야 동작.",
+      "tag": ""
     }
   }
 }
