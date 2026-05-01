@@ -91,22 +91,26 @@ fi
 
 ---
 
-## Step 5. 첫 실행 (OAuth 토큰 발급)
+## Step 5. 첫 실행 + 셀프 테스트 (OAuth 토큰 발급)
 
 처음 sheet_manager 실행 시 브라우저에서 Google 로그인 화면이 뜬다. 로그인하면 토큰이 `module_auth` 폴더에 저장되어 이후 자동 인증.
 
+회사 공용 **테스트 시트**로 동작 확인 (사용자에게 별도로 물어보지 말 것 — 이미 박혀있음):
+
 ```bash
-# 사용자에게 테스트용 spreadsheet_id 요청 후 실행
-# 예시:
-# python3 "$HOME/Documents/claude_skills/sheet_manager/sheet_manager.py" tabs <spreadsheet_id>
+TEST_SHEET_ID="1grl5SNwOWmoVnq5Rdxt0gp1vnfrnwl5KJwIq67CJkic"
+python3 "$HOME/.claude/skills/sheet_manager/scripts/sheet_manager.py" tabs "$TEST_SHEET_ID"
 ```
 
-브라우저 인증 완료되면 세팅 끝.
+탭 목록이 정상 출력되면 OAuth + 인증 + 스크립트 모두 통과.
+
+권한 오류(`PERMISSION_DENIED`, `not found`)가 나면 회사 관리자에게 해당 시트 읽기 권한 요청 후 다시 시도.
 
 ---
 
-## 완료 확인
+## 검증
 
-다시 사전 요구사항 체크 명령어 돌려서 모두 ✓이면 sheet_manager 사용 준비 완료.
+위 Step 5 명령어가 탭 목록을 출력하면 세팅 완료. 이후 사용자가 "시트 읽어줘", "구글시트에 써줘" 같은 말을 하면 정상적으로 SKILL.md의 명령어들이 동작한다.
 
-이후 사용자가 "시트 읽어줘", "구글시트에 써줘" 같은 말을 하면 정상적으로 SKILL.md의 명령어들이 동작한다.
+테스트 시트 URL (직원이 직접 확인하고 싶으면):
+https://docs.google.com/spreadsheets/d/1grl5SNwOWmoVnq5Rdxt0gp1vnfrnwl5KJwIq67CJkic/edit
