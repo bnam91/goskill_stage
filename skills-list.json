@@ -32,11 +32,11 @@
     },
     "calendar_manager": {
       "description": "맥 캘린더(Calendar) 앱을 제어하는 스킬. macOS 전용. 일정 조회/추가/삭제, 캘린더 목록 확인을 처리해.",
-      "tag": ""
+      "tag": "onboarding"
     },
     "bank_manager": {
       "description": "Google Sheets에 입금요청을 등록하는 스킬. 자주 쓰는 거래처를 별칭으로 등록해 두면 계좌 자동 매핑.",
-      "tag": ""
+      "tag": "onboarding"
     },
     "hometax_manager": {
       "description": "홈택스용 세금계산서/거래처 시트를 관리하는 스킬. 본인 회사 상호와 시트 정보를 스크립트에 입력 후 사용.",
