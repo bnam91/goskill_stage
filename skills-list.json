@@ -1,10 +1,13 @@
 {
   "version": 2,
   "_comment": "공용 스킬 카탈로그. 한 스킬당 tag 1개. 태그는 자유롭게 추가 가능 (예: onboarding, browser, dev, coupang 등)",
-
   "skills": {
     "chrome-cdp": {
       "description": "Chrome CDP 디버깅 포트 관리. Apple Silicon arm64 가드 + 9225 default 포트 포함",
+      "tag": "onboarding"
+    },
+    "sheet_manager": {
+      "description": "Google Sheets를 읽고/쓰고/수정하는 스킬. 사용자가 \"시트 읽어줘\", \"구글시트에 써줘\", \"탭 목록\", \"스프레드시트 행 추가\", \"시트 범위 삭제\", \"구글 시트 업데이트\" 등을 말할 때 실행해.",
       "tag": "onboarding"
     }
   }
