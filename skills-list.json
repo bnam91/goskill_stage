@@ -49,6 +49,10 @@
     "ads-manager-app": {
       "description": "쿠팡 광고 계산기 HTML 앱을 여는 스킬. ad-calculator.html 번들 포함, 별도 세팅 불필요.",
       "tag": ""
+    },
+    "nlm": {
+      "description": "NotebookLM 노트북을 alias로 빠르게 열거나 질문하는 단축어 스킬. nlm CLI(notebooklm-mcp-cli) 설치 + Google OAuth + 본인 alias 등록 필요.",
+      "tag": ""
     }
   }
 }
